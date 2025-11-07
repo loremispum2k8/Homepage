@@ -18,12 +18,12 @@ body{
 }
 .trapezoid{
     position: absolute;
-    transform: skewY(-10deg) translateY(-55%);
+    transform: skewY(-10deg) translateY(-65%);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(48, 86, 153);
+    background-color: rgb(13, 13, 13);
 }
 .textAndImage{
     position: relative;
@@ -143,7 +143,52 @@ body{
     gap: 8px;
 }
 
-
+footer{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 100%;
+    gap: 30px;
+}
+.footerText{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.cRow img{
+    width: 36px;
+    padding: 4px;
+}
+.footerImg{
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+.socials img{
+    filter: invert();
+    width: 36px;
+    padding: 4px;
+}
 
 @media screen and (max-width:1250px){
 .topImage{
@@ -168,7 +213,11 @@ body{
     color: white;
     margin-bottom: 5px;
 }
-
+.footerImg{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
 
 }
 
@@ -188,7 +237,7 @@ body{
 }
 .top{
     width: 100%;
-    padding: 80px 80px 50px 80px;
+    padding: 80px 40px 50px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,6 +269,12 @@ body{
     width: 100%;
     object-fit: cover;
 }
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 40px;
+}
 .bigName{
     font-size: clamp(40px, 10vw, 80px);
     text-align: center;
@@ -235,5 +290,26 @@ body{
     padding: 4px;
 }
 
-
+footer{
+    margin-top: 80px;
+    padding: 40px 40px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerImg{
+    width: 250px;
+}
+.middleGridContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 40px;
+    gap: 20px;
+}
 }
