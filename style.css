@@ -7,9 +7,14 @@
 body{
     width: 100%;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .top{
     width: 100%;
-    padding: 80px 80px;
+    padding: 80px 80px 50px 80px;
 }
 .trapezoid{
     position: absolute;
@@ -65,18 +70,78 @@ body{
     color: white;
     margin-bottom: 5px;
 }
-.icons{
-    position: relative;
-    bottom: 0;
-    right: 0;
-    margin-right: 40px;
-}
 .icon{
     width: 36px;
     padding: 4px;
 }
 
-
+.middleGridContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 80px;
+    gap: 20px;
+}
+.myWork{
+    width: 100%;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    gap: 20px;
+    transition: all 0.1s;
+    border: 1px solid rgb(212, 212, 212);
+}
+.card:hover{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.08);
+    scale: 1.02;
+}
+.card-image{
+    height: 300px;
+    margin-top: 20px;
+    width: 90%;
+    object-fit: cover;
+}
+.card-icon{
+    width: 36px;
+    padding: 4px;
+}
+.card-text{
+    padding: 30px;
+    gap: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.card-topRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    border-top: 1px solid rgb(212, 212, 212);
+    padding: 10px 0px;
+}
+.projectName{
+    font-size: 20px;
+    font-weight: bold;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
 
 
 
@@ -107,7 +172,6 @@ body{
 
 }
 
-
 @media screen and (max-width:800px){
 .topImage{
     margin-top: 0px;
@@ -124,7 +188,7 @@ body{
 }
 .top{
     width: 100%;
-    padding: 80px 80px;
+    padding: 80px 80px 50px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,12 +229,7 @@ body{
     color: white;
     margin-bottom: 5px;
 }
-.icons{
-    position: relative;
-    bottom: 0;
-    right: 0;
-    margin-right: 40px;
-}
+
 .icon{
     width: 36px;
     padding: 4px;
