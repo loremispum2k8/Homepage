@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+.top{
+    width: 100%;
+    padding: 80px 80px;
+}
+.trapezoid{
+    position: absolute;
+    transform: skewY(-10deg) translateY(-55%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(48, 86, 153);
+}
+.textAndImage{
+    position: relative;
+    background-color: white;
+    height: fit-content;
+
+}
+.topText{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    padding: 40px 40px 40px 0px;
+    z-index: 1;
+}
+.aboutMe{
+    margin-bottom: 30px;
+}
+.description{
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+.topImage{
+    margin-top: 24px;
+    background-color: white;
+    width:400px;
+    height: 300px;
+    transform: scale(1.3);
+    transform-origin: center left;
+    float: left;
+    margin-right: 140px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+.topInnerImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bigName{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin-bottom: 5px;
+}
+.icons{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+}
+.icon{
+    width: 36px;
+    padding: 4px;
+}
+
+
+
+
+
+@media screen and (max-width:1250px){
+.topImage{
+    margin-top: 24px;
+    background-color: white;
+    width:350px;
+    height: 300px;
+    transform: scale(1.2);
+    transform-origin: center left;
+    float: left;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+.bigName{
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+}
+
+
+@media screen and (max-width:800px){
+.topImage{
+    margin-top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    transform: scale(1);
+    transform-origin: center left;
+    float: left;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+.top{
+    width: 100%;
+    padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textAndImage{
+    position: relative;
+    background-color: white;
+    height: fit-content;
+    width: clamp(250px 5vw 350px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topText{
+    box-shadow:none;
+    padding:40px 0px 0px 0px;
+    z-index: 1;
+    text-align: center;
+}
+.aboutMe{
+    margin-bottom: 30px;
+}
+.description{
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+.topInnerImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bigName{
+    font-size: clamp(40px, 10vw, 80px);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin-bottom: 5px;
+}
+.icons{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+}
+.icon{
+    width: 36px;
+    padding: 4px;
+}
+
+
+}
